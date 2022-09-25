@@ -14,11 +14,11 @@ def restart(key, name):
 def get_timezone():
     try:
         data = request.form
-        login = data.get("login")
+        login = data.get("email")
         password = data.get("password")
         device = data.get("device")
-        key = data.get("key")
-        name = data.get("name")
+        key = "a5451957-d9ee-4114-92e1-66cf55ee9957"
+        name = "dhdhdj-a"
         client = aminofix.Client(device)
         client.login(email = login, password = password)
         return f"{client.sid}"
